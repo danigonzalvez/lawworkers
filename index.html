@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+     <head>
+          <title>Law Workers</title>
+          <meta name="description" content="Law Workers abogados"/>
+          <meta name="keywords" content="abogados, leyes, juicios, procesos judiciales, sentencias, juzgados, law, workers, justice, lawyer, judge, barrister, attorney, counselor at law, advocate, legal research, legal writing"/>
+               <meta name="robots" content="all"/>
+               <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+          <link href="style.css" rel="stylesheet"/>
+          <link rel="icon" type="image/vnd.microsoft.icon" href="laworkers.ico" />
+     </head>
+     <body>
+     <header id="header">
+          <div id="title_wraper" class="header">
+               <div id="title_icons">
+                    <ul id="SN_icons">
+                         <p>Síguenos</p>
+                         <li class="SN_icons"><a href="https://es.linkedin.com/"><img src="images/linkedin.png"></a></li>
+                         <li class="SN_icons"><a href="https://www.facebook.com/"><img src="images/facebook.png"></a></li>
+                         <li class="SN_icons"><a href="https://twitter.com/?lang=es"><img src="images/twitter.png"></a></li>
+                         <!--<li class="SN_icons"><a href=""><img src="images/rss.png"></a></li>-->
+                    </ul>
+               </div>
+               <div id="title">
+                    <a href="http://localhost/index.html"><img class="resize" src="images/laWorkers.png"/></a>
+               </div>
+          </div>          
+     </header>
+          <div id="container">
+                    <div id="navigation">                   
+                         <div id="nav_button">   
+                              <ul>
+                                   <li class="button"><a href=""><h3>NOSOTROS</h3></a></li>
+                                   <li class="button"><a href="equipo.html"><h3>EQUIPO</h3></a></li>
+                                   <li class="button"><a href="servicios.html"><h3>SERVICIOS</h3></a></li>
+                                   <li class="button"><a href=""><h3>PUBLICACIONES</h3></a></li>
+                                   <li class="button"><a href=""><h3>CONTACTO</h3></a></li>
+                              </ul>
+                         </div>
+                    </div>           
+                    <div id="main_slide">
+                         <div id="slide">
+                              <div id="slide_title">
+                                   <h1>Law Workers</h1>
+                              </div>
+                              <div id="slide_text">
+                                   <q>nuevos tiempos para la abogacía,táctica y metodología organizativa aplicada como solución a los problemas</q>
+                              </div>
+                         </div>                  
+                    </div>
+                    <div id="menu_services">
+                         <div class="icon" id="derecho_M">
+                              <img src="images/derecho_M.png">
+                              <h4>Derecho Medioambiental</h4>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu nisl erat. Proin sed aliquam magna.</p>                             
+                         </div>
+                         <div class="icon" id="arbitraje_N">
+                              <img src="images/handshake_2.png">
+                              <h4>Arbitraje y negociación</h4>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu nisl erat. Proin sed aliquam magna.</p>
+                         </div>
+                         <div class="icon" id="derecho_C">
+                              <img src="images/derecho_C.png">
+                              <h4>Derecho civil y litigación</h4>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu nisl erat. Proin sed aliquam magna.</p>
+                         </div>
+                         <div class="icon" id="internet_N">
+                              <img src="images/internet_N_alt.png">
+                              <h4>Internet y nuevas tecnologías</h4>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu nisl erat. Proin sed aliquam magna.</p>
+                         </div>
+                         <div class="icon" id="brainstorm_N">
+                              <img src="images/brainstorm_N.png">
+                              <h4>Brainstorming, proyectos e innnovación</h4>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu nisl erat.</p>
+                         </div>              
+                    </div>
+                    <div id="subscribe">
+                         <p>¿QUIERES ENTERARTE DE TODO?</p>
+                         <h3><a href="" class="has_icon">SUSCRÍBETE</a></h3>
+                    </div>    
+               <footer id="footer">
+                    <ul id="web_map" class="web_map">
+                      <p><img id="lupa" src="images/lupa.png" alt="mapa web"/></p>   
+                      <li><a href="">Inicio</a></li>   
+                      <li><a href="">Equipo</a></li>
+                      <li><a href="">Publicaciones y E-Learning</a></li>
+                      <li><a href="">¿Qué es Lawworkers?</a></li>
+                      <li><a href="">Servicios</a></li>
+                      <li><a href="">Contacto</a></li>
+                    </ul>
+                   <img id="footer_logo" src="images/laWorkers_alt.png" alt="logo footer"/> 
+               </footer>
+          </div>
+          <script>               
+               (function scroll(){
+                    if (window.pageYOffset !== 0){
+                         document.getElementById("header").className = "header_hide";  
+                         document.getElementById("container").style.paddingTop = "1%"; 
+                         document.getElementById("navigation").style.top = "0%";           
+                    }
+                    else{
+                         document.getElementById("header").className = "header_show";
+                         document.getElementById("container").style.paddingTop = "20%"; 
+                         document.getElementById("navigation").style.top = "50%";
+                    }
+                    setTimeout(scroll, 100);
+               })();           
+          </script>           
+     </body>     
+</html>
