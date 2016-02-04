@@ -91,7 +91,7 @@ p {
 	margin: 1%;
 	margin-right: 2%;
 	margin-top: 2%;
-	font-family: "georgia";
+	font-family: "signika-L";
 	color: #FFFFFF; 
 	text-align: center;
 	letter-spacing: 1px;
@@ -99,6 +99,7 @@ p {
 
 }
 .icon p{
+	font-family: "Lato-H";
 	font-size: 0.9em;
 	margin-top: 6%;
 }
@@ -132,6 +133,7 @@ p {
 	background-color: #052f2f;
 	text-align: center;
 	border-radius: 5px 5px 0px 0px;
+	z-index: 99;
 }
 #nav_button{	
 	display: block;
@@ -223,22 +225,33 @@ p {
 	to{background-image:url(images/horses.png);}
 }
 #slide_title{
-	display: none;
+	display: block;
 	width: 25%;
-	margin-top: 14%;
-	margin-left: 20%;
+	padding-top: 10%;
+	margin: 0 auto;
 	text-shadow: 2px 2px #000000;
 	font-size: 1.4em;
 	color: #FFFFFF;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 0.5s linear;
 }
 #slide_text{
-	display: none;
-	margin-top: 2%;
-	margin-left: 25%;
-	text-align: left;
+	display: block;
+	padding-top: 2%;
+	margin: 0 auto;
 	text-shadow: 2px 2px #000000;
 	width: 35%;
 	font-size: 1.4em;
+	text-align: center;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 0.5s linear;
+}
+#slide:hover .text{
+	opacity: 1;
+	visibility: visible;
+	z-index: 1;	
 }
 #menu_services{
 	display: block;
@@ -295,19 +308,19 @@ p {
 	display: block;
 	width: auto;
 	height: auto;
-	/*border: 1px dotted #FF8000;*/
+	padding: 4%;
 }
 .crew_section img{
 	display: inline-block;
 	width: 100%;
-	height: auto;	
+	height: auto;
 }
 .crew_text{
 	display: inline-block;
 	width: 50%;
 	height: auto;
 	padding: 3%;
-	background-color: #C0C0C0;
+	background-color: #FFFFFF;
 	color: #052f2f;
 	vertical-align: top;
 }
@@ -390,7 +403,9 @@ p {
 	margin-bottom: 8%;
 }
 .serv_list{
+	visibility: visible;
 	display: table-cell;
+	border:1px solid #FF0000;
 	width: 48%;
 	height: auto;
 	padding: 4%;
@@ -403,6 +418,12 @@ p {
 	word-spacing: 10px;
 	letter-spacing: 1px;
 	text-align: left;
+}
+.serv_list img{
+	display: block;
+	width: 30%;
+	height: auto;
+	margin: 0 auto;
 }
 #footer{
 	display: block;

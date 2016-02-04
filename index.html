@@ -23,7 +23,7 @@
                     </ul>
                </div>
                <div id="title">
-                    <a href="http://localhost/index.html"><img class="resize" src="images/laWorkers.png"/></a>
+                    <a href="http://localhost/index.html"><img class="resize" src="images/laWorkers_logo.png"/></a>
                </div>
           </div>          
      </header>
@@ -40,11 +40,11 @@
                          </div>
                     </div>           
                     <div id="main_slide">
-                         <div id="slide">
-                              <div id="slide_title">
+                         <div id="slide" onmouseover="onhover();">
+                              <div id="slide_title" class="text">
                                    <h1>Law Workers</h1>
                               </div>
-                              <div id="slide_text">
+                              <div id="slide_text" class="text">
                                    <q>nuevos tiempos para la abogacía,táctica y metodología organizativa aplicada como solución a los problemas</q>
                               </div>
                          </div>                  
@@ -106,7 +106,13 @@
                          document.getElementById("navigation").style.top = "50%";
                     }
                     setTimeout(scroll, 100);
-               })();           
-          </script>           
+               })();            
+          </script> 
+          <script>
+               (function onhover(){
+                    document.getElementById("slide_title").style.display = "block";
+                    document.getElementById("slide_text").style.display = "block";
+               })(); 
+          </script>          
      </body>     
 </html>
